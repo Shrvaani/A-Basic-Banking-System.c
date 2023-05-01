@@ -1,0 +1,77 @@
+int bal=10000;
+void main()
+{
+int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p;
+printf("Welcome to Atm\nPlease insert your card\n");
+scanf("%d",&a);
+if(a==1234)
+{
+printf("Please select any Option\n1.withdraw\n2.Deposit\n3.Balance\n4.Statement\n");
+scanf("%d",&b);
+if(b==1)
+{
+withdraw();
+}
+else if(b==2)
+{
+Deposit();
+}
+
+else
+{
+printf("Reinsert Your card");
+}
+}
+}
+void withdraw()
+{
+int a,b,c,d,e,f,g,h,i,j,k,l,m,o,p;
+printf("Enter PIn Number");
+for(p=3;p>0;p--)
+{
+
+scanf("%d",&c);
+if(c==1111)
+{
+printf("Enter Amount");
+scanf("%d",&d);
+if(d<bal)
+{
+
+e=d/2000;
+printf("2000 * %d\n",e);
+f=d%2000;
+g=f/500;
+printf("500 * %d\n",g);
+h=f%500;
+i=h/100;
+printf("100 * %d\n",i);
+printf("Transaction Successful");
+break;
+}
+else
+{
+printf("insuffisient fund in your account\n");
+break;
+}
+}
+else
+{
+printf("Wrong Pin\nYou Have %d Chances Left\n",p-1);
+}
+}
+}
+void Deposit()
+{
+int i,j,k,l,m,n,o,p;
+printf("how many 2000\n");
+scanf("%d",&j);
+printf("how many 500\n");
+scanf("%d",&k);
+printf("How many 100\n");
+scanf("%d",&l);
+m=(2000*j)+(500*k)+(100*l);
+printf("Toatal of %d deposited Successfully\n",m);
+bal=bal+m;
+printf("Total available balance after deposit %d\n",bal);
+}

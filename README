@@ -1,17 +1,49 @@
-This is a simple C++ program that contains five different functionalities based on user input. The program prompts the user to select an option from the menu of available functions and then performs the corresponding action.
+ATM Machine Simulation
+
+This program simulates an ATM machine that allows the user to withdraw, deposit, check balance and view the statement of their account.
+
+How to run the program:
+
+Open a C++ compiler or an IDE (Integrated Development Environment) such as Code::Blocks, Dev-C++, etc.
+
+Create a new file and copy the above code.
+
+Save the file with a suitable name (for example, atm.cpp).
+
+Compile and run the program.
+
+Follow the instructions displayed on the screen to select the desired option and complete the transaction.
 
 Functions:
 
-Odd or Even - The user is prompted to enter a number and then asked to choose whether to display all odd or even numbers up to the input value.
+void withdraw()
+This function allows the user to withdraw money from their account. The user needs to enter their PIN number, and the program will ask the user to enter the amount they want to withdraw. If the account balance is sufficient, the program will dispense the amount in the denominations of 2000, 500, and 100 notes, and the transaction will be successful. If the account balance is insufficient, the program will display an error message.
 
-Leap year or non-Leap year - The user is prompted to enter two years and the program displays all leap years between those years.
+void Deposit()
+This function allows the user to deposit money into their account. The user needs to enter the number of 2000, 500, and 100 notes they want to deposit, and the program will calculate the total amount and display it on the screen. The program will then update the account balance.
 
-Greater of 3 numbers - The user is prompted to enter three numbers and the program determines and displays the greatest of those numbers.
+Variables:
 
-Prime number - The user is prompted to enter two numbers and the program displays all prime numbers between those numbers.
+int bal
+This variable stores the account balance. The initial value of the balance is set to 10000.
 
-Factorial - This function is not implemented in the current version of the program.
+int a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p
+These variables are used to store various values entered by the user, such as the PIN number, the number of notes for deposit and withdrawal, etc.
+
+Limitations:
+
+This program has some limitations, such as:
+
+The program assumes that the user has only one account.
+
+The program does not handle cases where the user enters incorrect values.
+
+The program does not handle cases where the user enters an incorrect PIN number multiple times.
+
+Conclusion:
+
+This program provides a basic simulation of an ATM machine. It can be used as a starting point for more advanced ATM simulations.
 
 To run the program, compile and execute the source code file. The program will prompt the user for input, and then display the output based on the selected function.
 
-Note: The program only accepts integer inputs for all options. Additionally, some functions have limitations, such as displaying only odd or even numbers and displaying leap years only between two years. The program may not work as expected for other input values outside of its limitations.
+
